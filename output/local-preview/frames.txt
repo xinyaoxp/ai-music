@@ -1,0 +1,17 @@
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_01.png'
+duration 0.75
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_02.png'
+duration 0.75
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_03.png'
+duration 0.75
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_04.png'
+duration 0.75
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_05.png'
+duration 0.75
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_06.png'
+duration 0.75
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_07.png'
+duration 0.75
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_08.png'
+duration 0.75
+file 'D:/ProjectGit/PythonTools/ai-short-series/ai-music/output/local-preview/frame_08.png'
