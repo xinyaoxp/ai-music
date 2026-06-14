@@ -19,8 +19,10 @@ Start here:
 
 1. `lessons/00_learning_path.md`
 2. `lessons/01_reference_breakdown.md`
-3. `projects/untouchable-clone/checklists.md`
-4. `projects/untouchable-clone/production_log.md`
+3. `workflow/00_system_overview.md`
+4. `workflow/04_second_song_protocol.md`
+5. `projects/untouchable-clone/checklists.md`
+6. `projects/untouchable-clone/production_log.md`
 
 ## Structure
 
@@ -50,4 +52,10 @@ python scripts/validate_project.py projects/untouchable-clone
 
 ```powershell
 python scripts/project_report.py projects/untouchable-clone
+```
+
+## Start A Second Song
+
+```powershell
+python scripts/new_song_project.py --slug second-song --title "Second Song" --duration 36 --style "cold futuristic K-pop fashion MV"
 ```

@@ -182,19 +182,19 @@
     const views = {
       overview: `
         <div class="stage">
-          <div class="card"><h2>1. 角色</h2><p>先做稳定主角，不急着做视频。正脸、侧脸、半身、全身、眼睛、嘴唇、手部都要有。</p></div>
-          <div class="card"><h2>2. 风格</h2><p>黑、银、白、冷光、金属舞台。所有资产都围绕同一套视觉系统。</p></div>
-          <div class="card"><h2>3. 短镜头</h2><p>每条 4-5 秒，用图片参考控制人物和场景，用文字控制动作和运镜。</p></div>
-          <div class="card"><h2>4. 剪辑</h2><p>筛选高光镜头，按音乐卡点，坏镜头重做。成片质量来自筛选和重做。</p></div>
+          <div class="card"><h2>1. 歌曲分析</h2><p>先拆音乐结构和情绪曲线，再决定画面。换歌时从这里重新开始。</p></div>
+          <div class="card"><h2>2. 视觉世界</h2><p>定义角色、服装、场景、灯光和运镜个性。所有资产都服务这一套世界。</p></div>
+          <div class="card"><h2>3. 短镜头工厂</h2><p>每条 4-5 秒，用图片参考控制人物和场景，用文字控制动作和运镜。</p></div>
+          <div class="card"><h2>4. 复盘迁移</h2><p>把失败变成规则。第二首歌换内容，不换工程方法。</p></div>
         </div>
         <div class="card">
           <h2>学习顺序</h2>
           <ol>
-            <li>先看 <code>projects/untouchable-clone/brief.md</code>，明确视觉目标。</li>
-            <li>用 <code>prompts/01_character_assets.md</code> 生成角色资产。</li>
-            <li>用 <code>prompts/02_scene_assets.md</code> 生成服装、舞台、特写。</li>
+            <li>先看 <code>workflow/00_system_overview.md</code>，理解完整闭环。</li>
+            <li>用 <code>song_analysis.md</code> 把歌拆成情绪和节奏。</li>
+            <li>用 <code>visual_world.md</code> 定义能统一全片的世界。</li>
             <li>按 <code>shotlist.yaml</code> 逐个生成视频节点。</li>
-            <li>用 <code>editing_plan.md</code> 剪辑和复盘。</li>
+            <li>用 <code>production_log.md</code> 复盘，再迁移到第二首歌。</li>
           </ol>
         </div>
       `,
@@ -202,11 +202,12 @@
         <div class="card">
           <h2>观摩学习路线</h2>
           <ol>
-            <li><strong>像导演一样看参考：</strong>先找重复出现的脸、服装、灯光、构图和剪辑节奏。</li>
+            <li><strong>像导演一样听歌：</strong>先找音乐段落、能量变化、情绪峰值和视觉关键词。</li>
+            <li><strong>像导演一样看参考：</strong>再找重复出现的脸、服装、灯光、构图和剪辑节奏。</li>
             <li><strong>建立资产库：</strong>不要直接做视频，先做人物、服装、舞台、局部特写。</li>
             <li><strong>一镜一生成：</strong>每条 4-5 秒，参考图管一致性，文字管动作和镜头。</li>
             <li><strong>剪辑决定高级感：</strong>用特写插入、黑场、闪白和卡点隐藏弱处。</li>
-            <li><strong>复盘失败：</strong>把变脸、服装漂移、手崩、太暗都写进修复规则。</li>
+            <li><strong>复盘失败：</strong>把变脸、服装漂移、手崩、太暗都写进修复规则，第二首歌继续用。</li>
           </ol>
         </div>
         <div class="stage">

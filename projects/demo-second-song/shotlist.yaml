@@ -1,0 +1,107 @@
+project: Demo Second Song
+duration_target_seconds: 36
+style: "neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups"
+aspect_ratio: "16:9"
+workflow:
+  - song_analysis
+  - visual_world
+  - asset_library
+  - shot_factory
+  - edit_review
+shots:
+  - id: S01
+    seconds: "0-4"
+    type: opening_hook
+    music_cue: "fill after song analysis"
+    references: []
+    intent: "fill with the role this shot plays in the song"
+    prompt: "Use the visual world: neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups. Fill this prompt after assets exist."
+    reject_if:
+      - face drift
+      - style drift
+      - weak motion
+      - muddy lighting
+  - id: S02
+    seconds: "4-8"
+    type: world_reveal
+    music_cue: "fill after song analysis"
+    references: []
+    intent: "fill with the role this shot plays in the song"
+    prompt: "Use the visual world: neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups. Fill this prompt after assets exist."
+    reject_if:
+      - face drift
+      - style drift
+      - weak motion
+      - muddy lighting
+  - id: S03
+    seconds: "8-12"
+    type: lip_sync_close_up
+    music_cue: "fill after song analysis"
+    references: []
+    intent: "fill with the role this shot plays in the song"
+    prompt: "Use the visual world: neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups. Fill this prompt after assets exist."
+    reject_if:
+      - face drift
+      - style drift
+      - weak motion
+      - muddy lighting
+  - id: S04
+    seconds: "12-16"
+    type: performance_medium
+    music_cue: "fill after song analysis"
+    references: []
+    intent: "fill with the role this shot plays in the song"
+    prompt: "Use the visual world: neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups. Fill this prompt after assets exist."
+    reject_if:
+      - face drift
+      - style drift
+      - weak motion
+      - muddy lighting
+  - id: S05
+    seconds: "16-20"
+    type: insert_detail
+    music_cue: "fill after song analysis"
+    references: []
+    intent: "fill with the role this shot plays in the song"
+    prompt: "Use the visual world: neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups. Fill this prompt after assets exist."
+    reject_if:
+      - face drift
+      - style drift
+      - weak motion
+      - muddy lighting
+  - id: S06
+    seconds: "20-24"
+    type: side_profile
+    music_cue: "fill after song analysis"
+    references: []
+    intent: "fill with the role this shot plays in the song"
+    prompt: "Use the visual world: neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups. Fill this prompt after assets exist."
+    reject_if:
+      - face drift
+      - style drift
+      - weak motion
+      - muddy lighting
+  - id: S07
+    seconds: "24-28"
+    type: montage_peak
+    music_cue: "fill after song analysis"
+    references: []
+    intent: "fill with the role this shot plays in the song"
+    prompt: "Use the visual world: neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups. Fill this prompt after assets exist."
+    reject_if:
+      - face drift
+      - style drift
+      - weak motion
+      - muddy lighting
+  - id: S08
+    seconds: "28-36"
+    type: final_title
+    music_cue: "fill after song analysis"
+    references: []
+    intent: "fill with the role this shot plays in the song"
+    prompt: "Use the visual world: neon cyberpunk emotional pop MV with rain, glass reflections, and intimate close-ups. Fill this prompt after assets exist."
+    reject_if:
+      - face drift
+      - style drift
+      - weak motion
+      - muddy lighting
