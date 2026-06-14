@@ -13,6 +13,15 @@ The goal is not one magic prompt. The goal is a repeatable pipeline:
 
 Open `studio/index.html` in a browser to view the guided production board.
 
+## Learn While Building
+
+Start here:
+
+1. `lessons/00_learning_path.md`
+2. `lessons/01_reference_breakdown.md`
+3. `projects/untouchable-clone/checklists.md`
+4. `projects/untouchable-clone/production_log.md`
+
 ## Structure
 
 - `projects/untouchable-clone/brief.md` - creative direction and constraints.
@@ -37,3 +46,8 @@ Open `studio/index.html` in a browser to view the guided production board.
 python scripts/validate_project.py projects/untouchable-clone
 ```
 
+## Report Current Assets
+
+```powershell
+python scripts/project_report.py projects/untouchable-clone
+```

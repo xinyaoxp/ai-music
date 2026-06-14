@@ -172,6 +172,7 @@
       <button class="navbtn" data-view="assets">资产库</button>
       <button class="navbtn" data-view="shots">分镜</button>
       <button class="navbtn" data-view="prompts">Prompt 模板</button>
+      <button class="navbtn" data-view="lesson">学习路径</button>
       <button class="navbtn" data-view="review">复盘</button>
     </nav>
     <section class="content" id="app"></section>
@@ -195,6 +196,24 @@
             <li>按 <code>shotlist.yaml</code> 逐个生成视频节点。</li>
             <li>用 <code>editing_plan.md</code> 剪辑和复盘。</li>
           </ol>
+        </div>
+      `,
+      lesson: `
+        <div class="card">
+          <h2>观摩学习路线</h2>
+          <ol>
+            <li><strong>像导演一样看参考：</strong>先找重复出现的脸、服装、灯光、构图和剪辑节奏。</li>
+            <li><strong>建立资产库：</strong>不要直接做视频，先做人物、服装、舞台、局部特写。</li>
+            <li><strong>一镜一生成：</strong>每条 4-5 秒，参考图管一致性，文字管动作和镜头。</li>
+            <li><strong>剪辑决定高级感：</strong>用特写插入、黑场、闪白和卡点隐藏弱处。</li>
+            <li><strong>复盘失败：</strong>把变脸、服装漂移、手崩、太暗都写进修复规则。</li>
+          </ol>
+        </div>
+        <div class="stage">
+          <div class="card"><h3>今天学什么</h3><p>读懂它不是单 prompt，而是一个节点工程。</p></div>
+          <div class="card"><h3>今天做什么</h3><p>生成第一批角色和舞台参考图。</p></div>
+          <div class="card"><h3>今天验收</h3><p>能不能用一句话讲清楚主角、舞台、光线、剪辑。</p></div>
+          <div class="card"><h3>今天别做</h3><p>别急着一口气生成完整 MV。这个诱惑很香，也很坑。</p></div>
         </div>
       `,
       assets: `
@@ -232,8 +251,10 @@ assets/audio/main_track.mp3</pre>
           <div class="tick"><strong>30-36s</strong><span>凝视镜头和标题</span></div>
         </div>
         <div class="shot-grid">
-          <div class="card"><h3>镜头原则</h3><p>大景负责世界观，特写负责冲击力，中景负责表演，插入镜头负责节奏。</p></div>
-          <div class="card"><h3>生成原则</h3><p>每个镜头都有参考图。不要指望纯文字同时解决人物、服装、场景、动作。</p></div>
+          <div class="card"><h3>S01 眼睛钩子</h3><p>闭眼到睁眼。目标是第一秒抓人，不解释世界观。</p></div>
+          <div class="card"><h3>S02 舞台揭示</h3><p>金属舞台和全身造型。目标是让片子看起来有制作预算。</p></div>
+          <div class="card"><h3>S03 唇部演唱</h3><p>嘴唇和脸部特写。目标是把音乐感立起来。</p></div>
+          <div class="card"><h3>S07 快速蒙太奇</h3><p>眼、嘴、手、侧脸、全身舞蹈快速切换。目标是冲击力。</p></div>
         </div>
       `,
       prompts: `
@@ -275,4 +296,3 @@ assets/audio/main_track.mp3</pre>
   </script>
 </body>
 </html>
-
