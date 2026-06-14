@@ -1,68 +1,67 @@
-# Reference Breakdown: Why It Works
+# 参考拆解：它为什么有效
 
-## Production Pattern
+## 生产模式
 
-The reference canvas is not a single prompt. It is a node graph.
+这个画布不是一条 prompt，而是一个节点图。
 
-The graph has five visible layers:
+它大致有五层：
 
-1. Character and identity references.
-2. Costume and styling references.
-3. Stage and environment images.
-4. Short video generation nodes.
-5. Utility nodes for crop, upscale, analysis, subtitles, audio, and frame extraction.
+1. 角色与身份参考
+2. 服装与造型参考
+3. 舞台与环境图
+4. 短视频生成节点
+5. 裁切、放大、解析、字幕、音频、截帧等工具节点
 
-## Visual Strategy
+## 视觉策略
 
-The video feels expensive because it repeats a small set of design choices:
+之所以显得贵，是因为它反复使用了少量稳定的设计选择：
 
-- cold monochrome palette
-- black/silver costume
-- metallic stage geometry
-- harsh top light and backlight
-- glossy reflections
-- intense close-ups
-- fast irregular cuts
+- 冷色单色调
+- 黑银服装
+- 金属舞台结构
+- 强顶光和背光
+- 光滑反射面
+- 强烈局部特写
+- 高频不规则剪切
 
-The viewer experiences variety, but the image system stays consistent.
+观众看到的是变化，但底层视觉系统一直统一。
 
-## Prompt Strategy
+## 提示词策略
 
-The strongest video prompt I observed had this structure:
+我看到的最强视频提示词，大致是这种结构：
 
 ```text
-Epic fashion film, use image 2 as the same performer, preserve the head accessory.
-She wears image 1 costume and performs inside image 4 stage while singing to audio 3.
-Close-up, accurate lip movement, sexy jazz dance, K-pop, cool camera movement, visual impact.
-Cold tone, clear image quality, costume reference image 1.
-Include local close-ups of eyes, lips, hands, side face.
-Fast irregular cuts, metallic structure surrounds the performer.
-Strong top light and backlight, subtle rim glow, ultra realistic, extreme camera movement.
+史诗级时尚影片，图片 2 作为同一位表演者，保留头饰。
+她穿着图片 1 的服装，在图片 4 的舞台中配合音频 3 演唱表演。
+特写、精准口型、性感爵士舞、K-pop、冷感运镜、视觉冲击力。
+冷色调、清晰画质、服装参考图片 1。
+包含眼睛、嘴唇、双手、侧脸等局部特写。
+快速不规则切镜，金属结构包围人物。
+强顶光和背光，轻微轮廓光，超写实，强烈运镜。
 ```
 
-Important pattern:
+关键规律：
 
-- references control identity and design
-- text controls behavior and camera
-- short duration keeps quality high
-- later editing creates the full music video
+- 参考图控制身份和设计
+- 文字控制动作和镜头
+- 短时长提高可控性
+- 最终靠剪辑完成整支 MV
 
-## What To Copy
+## 真正要抄的东西
 
-Copy the workflow, not the exact image.
+抄工作流，不抄单张图。
 
-Use:
+要用：
 
-- reference images for every clip
-- 4-5 second clip length
-- cold coherent style
-- multiple close-up inserts
-- strict rejection of failed outputs
+- 每个镜头都配参考图
+- 每条控制在 4 到 5 秒
+- 冷感且统一的风格
+- 多个局部特写插入
+- 对失败输出严格淘汰
 
-Avoid:
+不要：
 
-- trying to generate a full song at once
-- changing style every shot
-- relying on text alone for identity
-- overexplaining every detail in one prompt
-
+- 试图一次生成整首歌
+- 每个镜头都换风格
+- 只靠文字控制身份
+- 在一个 prompt 里解释太多

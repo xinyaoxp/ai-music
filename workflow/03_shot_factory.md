@@ -1,80 +1,79 @@
-# Shot Factory
+# 镜头工厂
 
-Use this process for every clip.
+每个短片都按这个流程做。
 
-## Shot Card
+## 镜头卡
 
 ```text
-Shot ID:
-Time range:
-Music cue:
-Shot size:
-Reference images:
-Action:
-Camera:
-Lighting:
-Duration:
-Prompt:
-Reject if:
-Keep if:
+镜头编号：
+时间范围：
+音乐提示：
+景别：
+参考图：
+动作：
+镜头：
+光线：
+时长：
+Prompt：
+淘汰条件：
+保留条件：
 ```
 
-## Shot Type Library
+## 镜头类型库
 
-### Opening Hook
+### 开场钩子
 
-Purpose: grab attention immediately.
+作用：第一时间抓住观众。
 
-Common forms:
+常见形式：
 
-- eyes open
-- head turns to camera
-- silhouette reveal
-- hard title flash
+- 睁眼
+- 转头看向镜头
+- 剪影揭示
+- 标题硬闪
 
-### World Reveal
+### 世界揭示
 
-Purpose: prove the MV has a cinematic world.
+作用：证明这支 MV 有电影世界。
 
-Common forms:
+常见形式：
 
-- wide stage shot
-- character at center
-- slow push-in
-- strong backlight
+- 舞台大景
+- 角色在中心
+- 慢慢推进
+- 强背光
 
-### Performance Shot
+### 表演镜头
 
-Purpose: connect the character to the song.
+作用：把角色和歌曲连起来。
 
-Common forms:
+常见形式：
 
-- lip sync close-up
-- half-body dance
-- full-body dance
-- hand gesture on beat
+- 口型特写
+- 半身舞蹈
+- 全身舞蹈
+- 跟着节拍做手势
 
-### Insert Shot
+### 插入镜头
 
-Purpose: create rhythm and hide weak transitions.
+作用：制造节奏，藏住转场瑕疵。
 
-Common forms:
+常见形式：
 
-- eyes
-- lips
-- hands
-- hair
-- stage texture
-- light beam
+- 眼睛
+- 嘴唇
+- 双手
+- 头发
+- 舞台纹理
+- 光束
 
-### Final Shot
+### 结尾镜头
 
-Purpose: leave a strong visual memory.
+作用：留下强记忆点。
 
-Common forms:
+常见形式：
 
-- direct stare
-- title overlay
-- collapse to black
-- slow backlight fade
-
+- 直接凝视
+- 标题叠加
+- 切黑
+- 背光慢慢淡出

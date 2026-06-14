@@ -1,44 +1,43 @@
-# Project Brief: Untouchable Clone
+# 项目说明：Untouchable 复刻版
 
-## Target
+## 目标
 
-Create a 30-45 second AI music MV with the same production logic as the reference canvas:
+做一支 30 到 45 秒的 AI 音乐 MV，生产逻辑尽量接近参考画布：
 
-- Female K-pop / fashion-film lead character.
-- Cold black, silver, and white visual system.
-- Metallic stage structures, harsh top light, rim light, smoke, glossy reflections.
-- Fast cuts between full-body dance, face close-up, eye close-up, lips, hands, side profile.
-- Image-to-video generation driven by consistent character, costume, and scene references.
-- Clips are short, usually 4-5 seconds.
+- 女性 K-pop / 时尚片主角
+- 冷黑、银、白的视觉系统
+- 金属舞台结构、强顶光、轮廓光、烟雾、反光
+- 全身舞蹈、脸部特写、眼部特写、嘴唇、双手、侧脸之间快速切换
+- 依靠统一的角色、服装、场景参考做图生视频
+- 单条镜头短，通常 4 到 5 秒
 
-## Main Rule
+## 核心规则
 
-Do not generate the whole MV in one prompt.
+不要用一个 prompt 直接生整支 MV。
 
-Build reusable visual assets first, then generate short clips from references.
+先做可复用视觉素材，再用参考图生成短镜头。
 
-## Visual Keywords
+## 视觉关键词
 
-- epic fashion film
-- futuristic metallic stage
-- cold monochrome lighting
-- high contrast top light and backlight
-- glossy black floor
-- silver mechanical structure
-- K-pop dance performance
-- extreme close-up
-- sharp cinematic camera motion
-- fast irregular cut rhythm
-- ultra realistic
+- 史诗感时尚影片
+- 未来感金属舞台
+- 冷色单色调
+- 高反差顶光和背光
+- 光滑黑地面
+- 银色机械结构
+- K-pop 舞蹈表演
+- 极特写
+- 锐利电影感运镜
+- 高频不规则剪辑节奏
+- 超写实
 
-## Asset Targets
+## 素材目标
 
-Minimum asset set before video generation:
+进入视频生成前，至少准备：
 
-- 8 character identity images
-- 6 costume references
-- 6 stage and environment images
-- 8 close-up images
-- 1 title/logo image
-- 1 music file or rhythm reference
-
+- 8 张角色身份图
+- 6 张服装参考图
+- 6 张舞台 / 环境图
+- 8 张局部特写图
+- 1 张标题 / Logo 图
+- 1 个音乐文件或节奏参考

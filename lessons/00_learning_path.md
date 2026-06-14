@@ -1,91 +1,90 @@
-# Learning Path
+# 学习路径
 
-This project is designed as a watch-and-build course. Do not skip stages.
+这个项目按“边看边做”的方式设计，不要跳阶段。
 
-## Stage 1: Read The Reference Like A Director
+## 阶段 1：像导演一样读参考
 
-Goal: understand why the reference looks expensive.
+目标：看懂为什么参考片段会显得贵。
 
-Look for:
+重点找：
 
-- repeated face identity
-- repeated costume language
-- repeated color and lighting
-- short clips instead of long scenes
-- close-up inserts for rhythm
-- strong stage silhouette
-- aggressive rejection of weak outputs
+- 重复出现的脸
+- 重复出现的服装语言
+- 重复出现的颜色和光线
+- 短镜头而不是长场景
+- 用特写插入控制节奏
+- 强烈的舞台剪影
+- 对差输出的果断淘汰
 
-Deliverable:
+产出：
 
-- one paragraph describing the target style in your own words
-- a list of 8 shot ideas
+- 用自己的话写一段目标风格说明
+- 写 8 个镜头想法
 
-## Stage 2: Build The Asset Library
+## 阶段 2：建立素材库
 
-Goal: make the model stop inventing a new film every time.
+目标：让模型不要每次都重新发明一部电影。
 
-Create:
+要做：
 
-- identity sheet
-- costume references
-- stage references
-- close-up insert references
-- title/logo reference
+- 角色身份图
+- 服装参考图
+- 舞台参考图
+- 局部特写参考图
+- 标题 / Logo 参考图
 
-Deliverable:
+产出：
 
-- put files into `projects/untouchable-clone/assets/`
-- run `python scripts/validate_project.py projects/untouchable-clone`
+- 把文件放进 `projects/untouchable-clone/assets/`
+- 运行 `python scripts/validate_project.py projects/untouchable-clone`
 
-## Stage 3: Generate First-Pass Clips
+## 阶段 3：生成第一轮短片
 
-Goal: produce usable 4-5 second clips.
+目标：产出可用的 4 到 5 秒镜头。
 
-Rules:
+规则：
 
-- one shot per generation task
-- always use image references
-- keep prompts specific but not overloaded
-- generate multiple candidates per shot
-- reject ugly clips quickly
+- 一个镜头一个任务
+- 永远用图参考
+- prompt 要具体，但不要堆满
+- 每个镜头至少做多个候选
+- 差的片段要快速淘汰
 
-Deliverable:
+产出：
 
-- at least 2 candidates per shot
-- fill `projects/untouchable-clone/production_log.md`
+- 每个镜头至少 2 个候选
+- 填写 `projects/untouchable-clone/production_log.md`
 
-## Stage 4: Edit To Music
+## 阶段 4：跟音乐剪辑
 
-Goal: make the generated clips feel intentional.
+目标：让生成片段看起来是“被设计过”的。
 
-Rules:
+规则：
 
-- cut on rhythm
-- use inserts to hide weak transitions
-- keep the color grade unified
-- do not keep a weak shot because it cost credits
+- 按节拍切
+- 用插入镜头遮弱转场
+- 保持统一调色
+- 不要因为花了成本就保留烂镜头
 
-Deliverable:
+产出：
 
-- 30-45 second first cut
-- a list of clips to regenerate
+- 30 到 45 秒初剪
+- 需要重做的镜头列表
 
-## Stage 5: Repair And Polish
+## 阶段 5：修复和打磨
 
-Goal: turn a promising AI test into a finished short.
+目标：把一个像样的 AI 测试变成完整短片。
 
-Repair:
+修复项：
 
-- face drift
-- costume drift
-- bad hands
-- weak motion
-- muddy lighting
-- bad lip sync
+- 变脸
+- 服装漂移
+- 手部问题
+- 运动无力
+- 画面太脏
+- 口型不准
 
-Deliverable:
+产出：
 
-- final render
-- a written postmortem explaining what worked
-
+- 最终成片
+- 一份写明什么有效、什么无效的复盘

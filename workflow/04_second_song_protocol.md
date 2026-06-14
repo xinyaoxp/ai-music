@@ -1,42 +1,42 @@
-# Second Song Protocol
+# 第二首歌迁移协议
 
-Use this when starting a new song.
+新歌开始时就用这个。
 
-## Step 1: Create A New Project
-
-```powershell
-python scripts/new_song_project.py --slug my-song --title "My Song" --duration 36 --style "cold futuristic K-pop fashion MV"
-```
-
-If the system `python` does not work on Windows, use the bundled runtime path:
+## 第 1 步：创建新项目
 
 ```powershell
-& "C:\Users\chenjingxian\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" scripts\new_song_project.py --slug my-song --title "My Song" --duration 36 --style "cold futuristic K-pop fashion MV"
+python scripts/new_song_project.py --slug my-song --title "我的歌" --duration 36 --style "冷感未来 K-pop 时尚 MV"
 ```
 
-## Step 2: Fill Song Analysis
+如果系统 `python` 在 Windows 上不可用，就用内置运行时：
 
-Edit:
+```powershell
+& "C:\Users\chenjingxian\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" scripts\new_song_project.py --slug my-song --title "我的歌" --duration 36 --style "冷感未来 K-pop 时尚 MV"
+```
+
+## 第 2 步：填写歌曲分析
+
+编辑：
 
 ```text
 projects/<slug>/song_analysis.md
 ```
 
-Do not make assets until this is filled.
+没填完之前不要做素材。
 
-## Step 3: Define Visual World
+## 第 3 步：定义视觉世界
 
-Edit:
+编辑：
 
 ```text
 projects/<slug>/visual_world.md
 ```
 
-The world must be specific enough that every shot belongs to it.
+这个世界必须足够具体，保证每个镜头都属于它。
 
-## Step 4: Build Assets
+## 第 4 步：做素材
 
-Put files into:
+把文件放进：
 
 ```text
 projects/<slug>/assets/character
@@ -47,18 +47,17 @@ projects/<slug>/assets/title
 projects/<slug>/assets/audio
 ```
 
-## Step 5: Generate Clips
+## 第 5 步：生成镜头
 
-Use:
+使用：
 
 ```text
 projects/<slug>/shotlist.yaml
 projects/<slug>/production_log.md
 ```
 
-Generate at least two candidates per shot.
+每个镜头至少做两个候选。
 
-## Step 6: Edit And Repair
+## 第 6 步：剪辑和修复
 
-Use the rejection log. Keep the system, change the shots.
-
+看淘汰记录。系统别变，镜头可以改。

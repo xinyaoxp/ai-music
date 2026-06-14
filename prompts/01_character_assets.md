@@ -1,29 +1,28 @@
-# Character Asset Prompts
+# 角色素材提示词
 
-Generate these before video. Keep the same seed/reference/character identity workflow whenever your tool supports it.
+先做这些，再做视频。只要工具支持，就尽量保持相同的 seed / 参考图 / 角色身份流程。
 
-## Identity Sheet
+## 身份图
 
 ```text
-Ultra realistic young female K-pop fashion performer, cold elegant face, black hair, pale skin, sharp eyes, calm untouchable expression, high fashion editorial portrait, clean front-facing identity reference, neutral dark background, soft but precise studio lighting, no text, no logo.
+超写实年轻女性 K-pop 时尚表演者，冷感优雅的脸，黑发，偏白肤色，锐利眼神，平静而不可触碰的表情，高级时尚杂志肖像，干净的正面身份参考，中性深色背景，柔和但准确的棚拍光线，不要文字，不要 Logo。
 ```
 
-Required outputs:
+需要产出：
 
-- front face
-- left side profile
-- right side profile
-- half body
-- full body
-- eyes close-up
-- lips close-up
-- hands close-up
+- 正脸
+- 左侧脸
+- 右侧脸
+- 半身
+- 全身
+- 眼睛特写
+- 嘴唇特写
+- 双手特写
 
-## Consistency Notes
+## 一致性说明
 
-- Keep hair shape consistent.
-- Keep face proportions consistent.
-- Use neutral poses for identity images.
-- Avoid heavy background detail in identity images.
-- Save selected files into `projects/untouchable-clone/assets/character/`.
-
+- 头发形状保持一致
+- 脸部比例保持一致
+- 身份图用中性姿势
+- 身份图尽量少背景细节
+- 选中的文件存进 `projects/untouchable-clone/assets/character/`

@@ -1,54 +1,53 @@
-# Visual World Template
+# 视觉世界模板
 
-## One Sentence
+## 一句话
 
-This MV looks like:
+这支 MV 看起来像：
 
 ```text
-<character> performing inside <world>, with <light>, <color>, and <camera personality>.
+<角色> 在 <世界> 中表演，使用 <光线>、<颜色> 和 <镜头个性>。
 ```
 
-## Character
+## 角色
 
-- Age/style:
-- Hair:
-- Face mood:
-- Costume:
-- Repeated accessories:
+- 年龄 / 风格：
+- 发型：
+- 脸部情绪：
+- 服装：
+- 反复出现的配饰：
 
-## World
+## 世界
 
-- Main environment:
-- Secondary environment:
-- Objects/motifs:
-- Texture:
+- 主环境：
+- 次环境：
+- 物件 / 母题：
+- 材质：
 
-## Color And Light
+## 颜色和光线
 
-- Primary colors:
-- Accent colors:
-- Key light:
-- Backlight:
-- Shadow rule:
+- 主色：
+- 辅色：
+- 主光：
+- 背光：
+- 阴影规则：
 
-## Camera Personality
+## 镜头个性
 
-Choose 2-3:
+选 2 到 3 个：
 
-- slow push-in
-- handheld energy
-- orbit
-- whip pan
-- snap zoom
-- static fashion portrait
-- fast montage
-- low-angle power shot
+- 慢推
+- 手持感
+- 环绕
+- 快速摇移
+- 突然拉近
+- 静态时尚肖像
+- 快速蒙太奇
+- 低机位力量镜头
 
-## Avoid
+## 避免
 
-- style drift
-- random locations
-- changing character identity
-- overcomplicated props
-- muddy lighting
-
+- 风格漂移
+- 随机地点
+- 角色身份变化
+- 过于复杂的道具
+- 发灰发脏的光线

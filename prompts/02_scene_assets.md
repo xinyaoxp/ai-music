@@ -1,31 +1,30 @@
-# Scene And Costume Asset Prompts
+# 场景和服装素材提示词
 
-## Main Costume
-
-```text
-Black and silver futuristic K-pop stage costume, high fashion, sculptural shoulders, glossy leather and metallic fabric, elegant but powerful silhouette, full body outfit reference, white background, sharp details, no model face emphasis, no text.
-```
-
-## Metallic Stage
+## 主服装
 
 ```text
-Huge futuristic metallic stage, glossy black floor, silver mechanical arcs and ribs surrounding the center, cold monochrome lighting, strong top light, strong backlight, smoke haze, high contrast, cinematic K-pop music video set, ultra realistic, empty stage, no text.
+黑银色未来感 K-pop 舞台服装，高级时装感，雕塑感肩部，亮面皮革和金属面料，优雅但有力量的轮廓，全身服装参考，白背景，细节清晰，不强调模特脸，不要文字。
 ```
 
-## Close-Up Inserts
+## 金属舞台
 
 ```text
-Extreme close-up cinematic insert, cold silver light, glossy black background, metallic reflections, high contrast, ultra realistic, fashion-film detail, dramatic composition.
+巨大的未来感金属舞台，亮黑色地面，银色机械弧线和肋骨结构包围中心，冷色单色调光线，强顶光，强背光，烟雾薄雾，高反差，电影感 K-pop MV 场景，超写实，空舞台，不要文字。
 ```
 
-Create variants for:
+## 局部特写插入
 
-- eyes
-- lips
-- hands
-- hair
-- side profile
-- metal texture
-- spotlight beams
-- smoke
+```text
+极特写电影感插入镜头，冷银光，亮黑背景，金属反射，高反差，超写实，时尚片细节，强烈构图。
+```
 
+可做变体：
+
+- 眼睛
+- 嘴唇
+- 双手
+- 头发
+- 侧脸
+- 金属纹理
+- 聚光灯束
+- 烟雾

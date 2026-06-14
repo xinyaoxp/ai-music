@@ -1,37 +1,36 @@
-# Editing Plan
+# 剪辑计划
 
-## Rhythm
+## 节奏
 
-Use short clips and cut aggressively. Do not keep a weak shot just because generation cost time.
+使用短镜头，并且果断剪。不要因为一个镜头花了时间和额度，就勉强保留弱镜头。
 
-Recommended clip map:
+推荐镜头分布：
 
-- 0-4s: eye hook
-- 4-8s: stage reveal
-- 8-12s: lip sync
-- 12-16s: dance medium shot
-- 16-20s: hands or light insert
-- 20-24s: side profile
-- 24-30s: fast montage
-- 30-36s: final face and title
+- 0-4 秒：眼睛钩子
+- 4-8 秒：舞台揭示
+- 8-12 秒：口型特写
+- 12-16 秒：半身舞蹈
+- 16-20 秒：手部或光线插入
+- 20-24 秒：侧脸
+- 24-30 秒：快速蒙太奇
+- 30-36 秒：最终脸部镜头和标题
 
-## Cut Style
+## 剪辑方式
 
-- Cut on snare, kick, and vocal phrase changes.
-- Use very short 6-12 frame inserts for eyes, lips, hands, and metal structures.
-- Use black frames or white flash sparingly between major sections.
-- Keep color grading cold and consistent.
+- 在军鼓、底鼓、歌词换气点切镜
+- 用 6 到 12 帧的眼睛、嘴唇、双手、金属结构插入镜头制造节奏
+- 大段落之间可以少量使用黑场或白闪
+- 保持统一的冷色调
 
-## Review Checklist
+## 复查清单
 
-Reject or regenerate clips with:
+遇到这些问题就删除或重做：
 
-- face drift
-- costume drift
-- broken hands
-- unstable eye direction
-- muddy lighting
-- weak camera motion
-- off-beat performance
-- low-impact composition
-
+- 变脸
+- 服装漂移
+- 手部崩坏
+- 眼神不稳定
+- 光线发脏
+- 运镜无力
+- 表演不贴节奏
+- 构图没有冲击力

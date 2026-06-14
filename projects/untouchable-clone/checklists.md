@@ -1,33 +1,32 @@
-# Checklists
+# 检查清单
 
-## Before Generating Video
+## 视频生成前
 
-- [ ] Main character face is stable.
-- [ ] Full-body identity image exists.
-- [ ] Costume reference is clear.
-- [ ] Stage reference is clear.
-- [ ] Close-up inserts exist.
-- [ ] Music or rhythm reference exists.
-- [ ] Shot list is locked.
+- [ ] 主角脸部稳定
+- [ ] 已有全身身份图
+- [ ] 服装参考清楚
+- [ ] 舞台参考清楚
+- [ ] 已有局部特写插入图
+- [ ] 已有音乐或节奏参考
+- [ ] 镜头表已锁定
 
-## Per Clip
+## 每个镜头
 
-- [ ] Uses at least one image reference.
-- [ ] Names the shot size.
-- [ ] Names the action.
-- [ ] Names the camera movement.
-- [ ] Names the lighting.
-- [ ] Names continuity constraints.
-- [ ] Includes avoid list.
-- [ ] Produces at least two candidates.
+- [ ] 至少用了一张参考图
+- [ ] 写清楚景别
+- [ ] 写清楚动作
+- [ ] 写清楚镜头运动
+- [ ] 写清楚光线
+- [ ] 写清楚连续性约束
+- [ ] 写清楚避坑项
+- [ ] 产出至少两个候选
 
-## Final Edit
+## 最终剪辑
 
-- [ ] Opening hook appears within 1 second.
-- [ ] Every 4-6 seconds has a visual change.
-- [ ] Close-ups appear repeatedly.
-- [ ] Face identity stays believable.
-- [ ] Costume language stays consistent.
-- [ ] Color grade is unified.
-- [ ] Weak clips are removed or regenerated.
-
+- [ ] 开场 1 秒内有钩子
+- [ ] 每 4 到 6 秒有一次视觉变化
+- [ ] 特写反复出现
+- [ ] 脸部身份可信
+- [ ] 服装语言统一
+- [ ] 调色统一
+- [ ] 差镜头被删除或重做

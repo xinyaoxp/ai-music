@@ -1,27 +1,26 @@
-# Video Clip Prompt Template
+# 视频短片提示词模板
 
-Use this for each 4-5 second video generation.
-
-```text
-[shot type]. Use [character reference] as the same lead performer.
-She wears [costume reference] and is inside [scene reference].
-Action: [specific performance action].
-Camera: [push-in / orbit / handheld / tilt / fast montage / static close-up].
-Lighting: cold monochrome palette, strong top light, strong backlight, silver rim glow, glossy black reflections.
-Style: epic K-pop fashion music video, ultra realistic, high contrast, sharp cinematic detail, strong visual impact.
-Continuity: preserve the same face, hair, costume, and stage design.
-Avoid: face drift, costume changes, extra fingers, distorted eyes, muddy shadows, text artifacts.
-```
-
-## Example: Eye Hook
+每个 4 到 5 秒短片都用这个。
 
 ```text
-Extreme close-up of the lead character's eyes. Her eyes are closed at first, then suddenly open with sharp emotional impact. Cold top light, black background, ultra realistic, intense fashion-film mood, slight push-in camera, high contrast, crisp detail. Preserve the same face and eye shape. Avoid distorted eyelids or extra reflections.
+[镜头类型]。使用 [角色参考] 作为同一个主角。
+她穿着 [服装参考]，位于 [场景参考] 中。
+动作：[具体表演动作]。
+镜头：[推进 / 环绕 / 手持 / 倾斜 / 快速蒙太奇 / 静态特写]。
+光线：冷色单色调、强顶光、强背光、银色轮廓光、亮黑反射地面。
+风格：史诗级 K-pop 时尚 MV、超写实、高反差、电影级细节、强视觉冲击力。
+连续性：保持同一张脸、头发、服装和舞台设计。
+避免：变脸、服装变化、多手指、眼睛畸形、脏影子、文字伪影。
 ```
 
-## Example: Main Performance
+## 示例：眼睛钩子
 
 ```text
-Epic fashion-film K-pop performance. Use image 2 as the same lead performer, preserve her head ornament and face. She wears image 1 costume and performs inside image 4 metallic stage while singing to the audio. Close-up and medium shots, precise lip movement, sexy jazz dance, cool camera motion, cold color tone, clear image quality. Include occasional close-ups of eyes, lips, hands, and side profile. Fast irregular cuts, strong top light and backlight, subtle rim glow, ultra realistic, high impact.
+主角眼睛极特写。起初双眼闭合，然后突然睁开，带来强烈情绪冲击。冷顶光，黑背景，超写实，强烈时尚片氛围，轻微推进镜头，高反差，细节清晰。保持同一张脸和眼形。避免眼皮变形和多余反光。
 ```
 
+## 示例：主表演
+
+```text
+史诗级时尚片 K-pop 表演。使用图片 2 作为同一位主角，保留头饰和脸部。她穿着图片 1 的服装，在图片 4 的金属舞台中配合音频演唱表演。特写和中景交替，精准口型，性感爵士舞，冷感运镜，冷色调，画质清晰。包含眼睛、嘴唇、双手、侧脸等局部特写。快速不规则切镜，强顶光和背光，轻微轮廓光，超写实，高冲击力。
+```

@@ -1,49 +1,48 @@
-# Song Analysis Template
+# 歌曲分析模板
 
-Copy this into each new song project.
+每做一首新歌都复制一份。
 
-## Basic Info
+## 基本信息
 
-- Song title:
-- Artist/source:
-- Target duration:
-- Intended platform:
-- Aspect ratio:
+- 歌名：
+- 歌手 / 来源：
+- 目标时长：
+- 使用平台：
+- 画幅比例：
 
-## Music Structure
+## 音乐结构
 
-| Section | Time Range | Energy | What Happens |
+| 段落 | 时间范围 | 能量 | 发生什么 |
 | --- | --- | --- | --- |
-| Intro | 0:00-0:04 | low / medium / high |  |
-| Verse |  |  |  |
-| Pre-chorus |  |  |  |
-| Chorus |  |  |  |
-| Bridge |  |  |  |
-| Outro |  |  |  |
+| 前奏 | 0:00-0:04 | 低 / 中 / 高 |  |
+| 主歌 |  |  |  |
+| 预副歌 |  |  |  |
+| 副歌 |  |  |  |
+| 桥段 |  |  |  |
+| 结尾 |  |  |  |
 
-## Emotional Map
+## 情绪地图
 
-Describe the emotional curve:
+写出情绪曲线：
 
 ```text
-The song starts as ..., then becomes ..., peaks at ..., and ends as ...
+这首歌先是……，然后变成……，在……达到峰值，最后收束成……
 ```
 
-## Visual Translation
+## 视觉转译
 
-| Music Signal | Visual Equivalent |
+| 音乐信号 | 视觉对应 |
 | --- | --- |
-| heavy kick | hard cut / black flash |
-| breathy vocal | close-up / slow push-in |
-| chorus lift | wide shot / strong backlight |
-| fast percussion | montage inserts |
-| quiet break | still portrait / side profile |
+| 重鼓点 | 硬切 / 黑闪 |
+| 气声唱法 | 特写 / 慢推 |
+| 副歌抬升 | 大景 / 强背光 |
+| 快速打击乐 | 蒙太奇插入 |
+| 安静空白 | 静态肖像 / 侧脸 |
 
-## Must-Have Shots
+## 必须有的镜头
 
-- Opening hook:
-- Signature performance shot:
-- Close-up motif:
-- World reveal:
-- Final image:
-
+- 开场钩子：
+- 标志性表演镜头：
+- 特写母题：
+- 世界揭示镜头：
+- 结尾定格：

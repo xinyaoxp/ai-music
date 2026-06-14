@@ -1,85 +1,84 @@
-# Local AI Music MV Engineering System
+# 本地 AI 音乐 MV 工程系统
 
-This is the reusable method.
+这是可复用的方法。
 
-The goal is to turn any song into a repeatable production pipeline:
+目标是把任何一首歌变成一条可重复的生产线：
 
 ```text
-song -> emotional map -> visual world -> asset library -> shot plan -> generated clips -> edit -> review -> repaired final
+歌曲 -> 情绪地图 -> 视觉世界 -> 素材库 -> 镜头计划 -> 生成短片 -> 剪辑 -> 复盘 -> 修正后成片
 ```
 
-## The Five Layers
+## 五层结构
 
-### 1. Song Analysis
+### 1. 歌曲分析
 
-You cannot make a strong MV until you know what the song is doing.
+先搞清楚歌在干什么，才有可能做出有力量的 MV。
 
-Extract:
+要提取：
 
-- BPM or rough tempo
-- intro / verse / pre-chorus / chorus / bridge / outro
-- emotional curve
-- strongest lyric images
-- beat drops and transition points
+- BPM 或大致速度
+- 前奏 / 主歌 / 预副歌 / 副歌 / 桥段 / 结尾
+- 情绪曲线
+- 最强歌词意象
+- 节拍落点和转场点
 
-### 2. Visual World
+### 2. 视觉世界
 
-Choose one coherent world for the song.
+给这首歌选一个统一的世界。
 
-Define:
+定义：
 
-- lead character
-- costume language
-- environment language
-- color palette
-- light logic
-- camera personality
+- 主角
+- 服装语言
+- 环境语言
+- 颜色方案
+- 光线逻辑
+- 镜头个性
 
-### 3. Asset Library
+### 3. 素材库
 
-Create references before video generation.
+先做参考图，再做视频。
 
-Minimum:
+最低配置：
 
-- character identity
-- costume
-- stage/environment
-- close-up inserts
-- title/logo
-- music reference
+- 角色身份图
+- 服装图
+- 舞台 / 环境图
+- 局部特写图
+- 标题 / Logo 图
+- 音乐参考
 
-### 4. Shot Factory
+### 4. 镜头工厂
 
-Generate clips one shot at a time.
+一镜一做，不要把整支 MV 扔给一次生成。
 
-Every shot must have:
+每个镜头都要有：
 
-- reference image(s)
-- action
-- camera movement
-- lighting
-- duration
-- rejection criteria
+- 参考图
+- 动作
+- 镜头运动
+- 光线
+- 时长
+- 淘汰标准
 
-### 5. Review Loop
+### 5. 复盘循环
 
-Every failed output becomes a rule.
+每一个失败输出都变成一条规则。
 
-Track:
+记录：
 
-- what failed
-- why it failed
-- which prompt repair worked
-- whether the shot should be regenerated or cut
+- 哪儿失败了
+- 为什么失败
+- 哪个修复 prompt 有效
+- 这个镜头该重做还是直接砍掉
 
-## Why This Transfers To A Second Song
+## 为什么能迁移到第二首歌
 
-You keep the engineering system and replace only:
+你保留的是工程系统，只替换：
 
-- song analysis
-- visual world
-- asset references
-- shot list
+- 歌曲分析
+- 视觉世界
+- 素材参考
+- 镜头表
 
-The production discipline stays the same.
-
+生产纪律保持不变。

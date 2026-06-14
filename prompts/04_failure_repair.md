@@ -1,42 +1,41 @@
-# Failure Repair Prompts
+# 失败修复提示词
 
-## Face Drift
+## 变脸
 
-Add:
-
-```text
-Strictly preserve the same face identity, same eye shape, same nose, same lips, same hairstyle, no face morphing.
-```
-
-## Costume Drift
-
-Add:
+补充：
 
 ```text
-Strictly preserve the black and silver costume from the reference image, no outfit replacement, no color changes.
+严格保持同一张脸、同样的眼形、鼻子、嘴唇和发型，不要发生脸部变形。
 ```
 
-## Weak Motion
+## 服装漂移
 
-Replace vague action with a beat-specific action:
+补充：
 
 ```text
-At the first beat she turns her head to camera, at the second beat she opens her eyes, at the third beat the camera pushes in quickly.
+严格保持参考图里的黑银服装，不要换装，不要改颜色。
 ```
 
-## Bad Hands
+## 运动无力
 
-Avoid hand-heavy shots, or use hands as an abstract insert:
+把模糊动作改成节拍动作：
 
 ```text
-Elegant hands partially hidden in light beams, fingers not fully visible, motion blur, cinematic insert.
+第一个拍点她转头看镜头，第二个拍点她睁眼，第三个拍点镜头快速推进。
 ```
 
-## Lighting Too Dark
+## 手部崩坏
 
-Add:
+尽量避免完整手部表演，或者把手做成抽象插入：
 
 ```text
-Clear visible face, controlled shadows, bright rim light, silver edge highlights, avoid muddy black areas.
+优雅的双手部分隐藏在光束中，手指不完全露出，带运动模糊，电影感插入镜头。
 ```
 
+## 光线太暗
+
+补充：
+
+```text
+脸部清晰可见，阴影受控，轮廓光明确，银色边缘高光，避免出现脏黑区域。
+```

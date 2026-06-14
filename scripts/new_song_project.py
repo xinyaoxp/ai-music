@@ -64,64 +64,64 @@ duration_target_seconds: {duration}
 style: "{style}"
 aspect_ratio: "16:9"
 workflow:
-  - song_analysis
-  - visual_world
-  - asset_library
-  - shot_factory
-  - edit_review
+  - 歌曲分析
+  - 视觉世界
+  - 素材库
+  - 镜头工厂
+  - 剪辑复盘
 shots:
 {chr(10).join(shots)}
 """
 
 
 def make_brief(title: str, duration: int, style: str) -> str:
-    return f"""# Project Brief: {title}
+    return f"""# 项目说明：{title}
 
-## Target
+## 目标
 
-Create a {duration}-second AI music MV.
+做一支 {duration} 秒的 AI 音乐 MV。
 
-Style direction:
+风格方向：
 
 ```text
 {style}
 ```
 
-## Success Criteria
+## 成功标准
 
-- The MV fits the song structure.
-- The lead character stays consistent.
-- The visual world stays coherent.
-- Every clip is generated from references.
-- The final edit has rhythm, inserts, and strong opening/final images.
+- MV 能贴合歌曲结构
+- 主角保持一致
+- 视觉世界统一
+- 每个镜头都来自参考图
+- 最终剪辑有节奏、有插入镜头、有强开场和强结尾
 
-## Learning Goal
+## 学习目标
 
-After finishing this project, you should be able to explain:
+做完这个项目后，你应该能解释：
 
-- why each shot exists
-- which reference assets control it
-- how the prompt translates music into image/video
-- why weak generations were rejected
+- 每个镜头为什么存在
+- 是哪些参考素材在控制它
+- prompt 如何把音乐转成图像 / 视频
+- 为什么要淘汰某些失败输出
 """
 
 
 def make_log() -> str:
-    return """# Production Log
+    return """# 制作记录
 
-## Asset Log
+## 素材记录
 
-| Date | Asset | Tool/Model | Prompt | Result | Notes |
+| 日期 | 素材 | 工具 / 模型 | 提示词 | 结果 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 
-## Clip Log
+## 镜头记录
 
-| Shot | Candidate | Tool/Model | References | Result | Keep? | Notes |
+| 镜头 | 候选 | 工具 / 模型 | 参考图 | 结果 | 保留？ | 备注 |
 | --- | --- | --- | --- | --- | --- | --- |
 
-## Rejection Notes
+## 淘汰记录
 
-| Date | Shot | Failure Type | What Happened | Repair |
+| 日期 | 镜头 | 失败类型 | 发生了什么 | 修复方式 |
 | --- | --- | --- | --- | --- |
 """
 
@@ -154,4 +154,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
