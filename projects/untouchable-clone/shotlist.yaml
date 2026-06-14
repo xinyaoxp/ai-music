@@ -1,0 +1,90 @@
+project: Untouchable Clone
+duration_target_seconds: 36
+aspect_ratio: "16:9"
+video_model_profile:
+  mode: image_to_video
+  preferred_version: "2.0"
+  resolution: "720P first pass, upscale selected shots"
+  clip_duration: "4s or 5s"
+  enabled_options:
+    - camera_motion
+    - material_validation
+    - reference_images
+
+shots:
+  - id: S01
+    seconds: "0-4"
+    type: extreme_close_up
+    references:
+      character: "assets/character/hero_face_front.*"
+      closeup: "assets/closeups/eyes_closed.*"
+    intent: "Closed eyes suddenly open with impact."
+    prompt: "Extreme close-up of the lead character's eyes. Her eyes are closed at first, then suddenly open with a sharp emotional impact. Cold top light, black background, ultra realistic, intense fashion-film mood, slight push-in camera, high contrast, crisp detail."
+    notes: "This is the hook. Regenerate until the eye movement feels clean."
+
+  - id: S02
+    seconds: "4-8"
+    type: wide_stage_reveal
+    references:
+      character: "assets/character/hero_full_body.*"
+      costume: "assets/costume/main_black_silver_outfit.*"
+      scene: "assets/stage/metallic_stage_wide.*"
+    intent: "Reveal the singer inside a metallic stage structure."
+    prompt: "Epic fashion-film wide shot. The lead performer wears the black and silver costume reference and stands in a huge futuristic metallic stage. Cold monochrome color, glossy black floor, strong top light and backlight, smoke in the air, slow forward dolly, ultra realistic, cinematic."
+
+  - id: S03
+    seconds: "8-12"
+    type: lip_sync_close_up
+    references:
+      character: "assets/character/hero_face_front.*"
+      audio: "assets/audio/main_track.*"
+    intent: "Precise mouth performance to the music."
+    prompt: "Close-up of the lead singer performing the lyrics with accurate lip movement. Cold silver lighting, glossy dark fashion MV style, subtle head movement, sharp rim light, ultra realistic skin texture, high impact K-pop music video."
+
+  - id: S04
+    seconds: "12-16"
+    type: dance_medium
+    references:
+      character: "assets/character/hero_half_body.*"
+      costume: "assets/costume/main_black_silver_outfit.*"
+      scene: "assets/stage/metallic_stage_mid.*"
+    intent: "Sexy jazz/K-pop dance gesture with controlled motion."
+    prompt: "Medium shot of the lead character dancing in a powerful K-pop jazz style. She brushes her hair back, then hits a sharp pose. Cool high contrast lighting, metallic structures behind her, slight handheld camera motion, fast fashion-film energy."
+
+  - id: S05
+    seconds: "16-20"
+    type: insert_hands
+    references:
+      closeup: "assets/closeups/hands_light.*"
+      scene: "assets/stage/light_beams.*"
+    intent: "A fast insert shot for rhythm and texture."
+    prompt: "Extreme close-up of elegant hands moving through cold white light beams. Metallic reflections, glossy black background, fast irregular camera cut feeling, ultra realistic, dramatic top light."
+
+  - id: S06
+    seconds: "20-24"
+    type: side_profile
+    references:
+      character: "assets/character/hero_side_profile.*"
+    intent: "Side profile beauty shot with hair movement."
+    prompt: "Side profile close-up of the lead performer. Hair moves slightly in slow motion. Cold backlight outlines her face, silver highlights, dark background, calm but powerful fashion-film mood, subtle push-in."
+
+  - id: S07
+    seconds: "24-30"
+    type: performance_montage
+    references:
+      character: "assets/character/hero_full_body.*"
+      costume: "assets/costume/main_black_silver_outfit.*"
+      scene: "assets/stage/metallic_stage_wide.*"
+      closeups: "assets/closeups/*"
+    intent: "Fast montage: dance, lips, eyes, hands, stage."
+    prompt: "Epic K-pop fashion MV montage. The lead performer dances and sings inside a metallic futuristic stage. Include quick visual flashes of eyes, lips, hands, side profile, and full-body dance. Cold monochrome palette, top light, backlight, strong rim glow, irregular fast camera changes, ultra realistic, high impact."
+
+  - id: S08
+    seconds: "30-36"
+    type: final_title
+    references:
+      character: "assets/character/hero_face_front.*"
+      title: "assets/title/untouchable_logo.*"
+    intent: "Final face shot and title impact."
+    prompt: "Final close-up of the lead character staring into camera, almost untouchable and calm. Dark silver lighting, metallic reflections, title graphic appears after a quick black cut, cinematic, ultra realistic, cold high fashion mood."
+

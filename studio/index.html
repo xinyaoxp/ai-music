@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Music MV Studio Board</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101113;
+      --panel: #181a1d;
+      --panel-2: #202329;
+      --line: #333842;
+      --text: #f2f3f5;
+      --muted: #a9b0bc;
+      --accent: #8ee6d8;
+      --hot: #f2cf72;
+      --bad: #ff8c8c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      padding: 20px 28px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 290px minmax(0, 1fr);
+      min-height: calc(100vh - 82px);
+    }
+    nav {
+      border-right: 1px solid var(--line);
+      padding: 18px;
+      background: #131518;
+    }
+    .navbtn {
+      width: 100%;
+      display: block;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text);
+      text-align: left;
+      padding: 12px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .navbtn.active {
+      background: var(--panel-2);
+      border-color: var(--line);
+    }
+    .content {
+      padding: 22px;
+      overflow: auto;
+    }
+    .stage {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 130px;
+    }
+    .card h2, .card h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+    .card p, li {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #26343a;
+      color: var(--accent);
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .shot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #0b0c0e;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      color: #dfe7ec;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(86px, 1fr));
+      gap: 8px;
+      margin: 14px 0 22px;
+    }
+    .tick {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: var(--panel);
+      min-height: 74px;
+    }
+    .tick strong {
+      display: block;
+      font-size: 12px;
+      color: var(--hot);
+      margin-bottom: 6px;
+    }
+    .tick span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      display: block;
+    }
+    .checklist {
+      columns: 2;
+      padding-left: 20px;
+    }
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+      nav { border-right: 0; border-bottom: 1px solid var(--line); }
+      .stage, .shot-grid, .timeline { grid-template-columns: 1fr; }
+      .checklist { columns: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>AI Music MV Studio Board</h1>
+      <div class="subtitle">按“资产库 -> 分镜 -> 图生视频 -> 后期复盘”的顺序学习和制作。</div>
+    </div>
+    <div class="badge">Untouchable Clone</div>
+  </header>
+  <main>
+    <nav>
+      <button class="navbtn active" data-view="overview">总览</button>
+      <button class="navbtn" data-view="assets">资产库</button>
+      <button class="navbtn" data-view="shots">分镜</button>
+      <button class="navbtn" data-view="prompts">Prompt 模板</button>
+      <button class="navbtn" data-view="review">复盘</button>
+    </nav>
+    <section class="content" id="app"></section>
+  </main>
+
+  <script>
+    const views = {
+      overview: `
+        <div class="stage">
+          <div class="card"><h2>1. 角色</h2><p>先做稳定主角，不急着做视频。正脸、侧脸、半身、全身、眼睛、嘴唇、手部都要有。</p></div>
+          <div class="card"><h2>2. 风格</h2><p>黑、银、白、冷光、金属舞台。所有资产都围绕同一套视觉系统。</p></div>
+          <div class="card"><h2>3. 短镜头</h2><p>每条 4-5 秒，用图片参考控制人物和场景，用文字控制动作和运镜。</p></div>
+          <div class="card"><h2>4. 剪辑</h2><p>筛选高光镜头，按音乐卡点，坏镜头重做。成片质量来自筛选和重做。</p></div>
+        </div>
+        <div class="card">
+          <h2>学习顺序</h2>
+          <ol>
+            <li>先看 <code>projects/untouchable-clone/brief.md</code>，明确视觉目标。</li>
+            <li>用 <code>prompts/01_character_assets.md</code> 生成角色资产。</li>
+            <li>用 <code>prompts/02_scene_assets.md</code> 生成服装、舞台、特写。</li>
+            <li>按 <code>shotlist.yaml</code> 逐个生成视频节点。</li>
+            <li>用 <code>editing_plan.md</code> 剪辑和复盘。</li>
+          </ol>
+        </div>
+      `,
+      assets: `
+        <div class="card">
+          <h2>最低资产清单</h2>
+          <ul class="checklist">
+            <li>8 张角色身份图</li>
+            <li>6 张服装/造型图</li>
+            <li>6 张舞台/环境图</li>
+            <li>8 张眼睛、嘴唇、手、侧脸特写</li>
+            <li>1 张标题/logo</li>
+            <li>1 条音乐或节奏参考</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>命名建议</h2>
+          <pre>assets/character/hero_face_front.png
+assets/character/hero_side_profile.png
+assets/character/hero_full_body.png
+assets/costume/main_black_silver_outfit.png
+assets/stage/metallic_stage_wide.png
+assets/closeups/eyes_closed.png
+assets/audio/main_track.mp3</pre>
+        </div>
+      `,
+      shots: `
+        <div class="timeline">
+          <div class="tick"><strong>0-4s</strong><span>眼睛睁开，极特写</span></div>
+          <div class="tick"><strong>4-8s</strong><span>金属舞台大景揭示</span></div>
+          <div class="tick"><strong>8-12s</strong><span>嘴唇唱词，精准口型</span></div>
+          <div class="tick"><strong>12-16s</strong><span>半身舞蹈，撩发</span></div>
+          <div class="tick"><strong>16-20s</strong><span>手部和光束插入</span></div>
+          <div class="tick"><strong>20-24s</strong><span>侧脸，发丝慢动作</span></div>
+          <div class="tick"><strong>24-30s</strong><span>快速蒙太奇</span></div>
+          <div class="tick"><strong>30-36s</strong><span>凝视镜头和标题</span></div>
+        </div>
+        <div class="shot-grid">
+          <div class="card"><h3>镜头原则</h3><p>大景负责世界观，特写负责冲击力，中景负责表演，插入镜头负责节奏。</p></div>
+          <div class="card"><h3>生成原则</h3><p>每个镜头都有参考图。不要指望纯文字同时解决人物、服装、场景、动作。</p></div>
+        </div>
+      `,
+      prompts: `
+        <div class="card">
+          <h2>视频节点模板</h2>
+          <pre>[镜头类型]。使用 [人物参考] 作为同一个主角。
+她穿着 [服装参考]，位于 [场景参考]。
+动作：[具体表演动作]。
+运镜：[推进/环绕/手持/倾斜/快速切换]。
+光线：冷色调、强顶光、强背光、银色轮廓光、黑色反光地面。
+风格：史诗级 K-pop 时尚 MV，超写实，高反差，极具冲击力。
+连续性：保持同一张脸、发型、服装和舞台。
+避免：变脸、服装变化、多手指、眼睛畸形、过暗、文字伪影。</pre>
+        </div>
+      `,
+      review: `
+        <div class="card">
+          <h2>复盘分类</h2>
+          <ul class="checklist">
+            <li>变脸：加强身份参考和一致性语句</li>
+            <li>服装漂移：提高服装参考权重</li>
+            <li>动作弱：把动作写成节拍动作</li>
+            <li>手崩：减少手部完整展示</li>
+            <li>太暗：增加可见脸部和边缘光要求</li>
+            <li>不震撼：换成极特写、低角度、快速推进</li>
+          </ul>
+        </div>
+      `
+    };
+
+    const app = document.querySelector("#app");
+    const buttons = [...document.querySelectorAll(".navbtn")];
+    function render(view) {
+      app.innerHTML = views[view];
+      buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.view === view));
+    }
+    buttons.forEach(btn => btn.addEventListener("click", () => render(btn.dataset.view)));
+    render("overview");
+  </script>
+</body>
+</html>
+
